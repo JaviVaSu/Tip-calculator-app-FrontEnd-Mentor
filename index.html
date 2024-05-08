@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./estilos/styles.css">
+
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/main.js"></script>
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <main>
+
+    <h1>Spli <br>tter</h1>
+
+    <section class="contenedor">
+
+      <div class="top">
+
+        <h2>Bill</h2>
+        <div class="contenedor-input">
+          <img src="./images/icon-dollar.svg" alt="">
+          <input type="number" name="" id="precio" class="precio" placeholder="0">
+        </div>
+        <p class="error" id="error-precio">Can´t be zero</p>
+        
+
+        <h2>Select Tip %</h2>
+        <div class="porcentajes">
+          <button id="propina1">5%</button>
+          <button id="propina2">10%</button>
+          <button id="propina3">15%</button>
+          <button id="propina4">25%</button>
+          <button id="propina5">50%</button>
+          <input type="number" name="" id="propina" class="propina" placeholder="Custom">
+        </div>
+        <p class="error" id="error-propina">Can´t be zero</p>
+
+        <h2>Number of People</h2>
+        <div class="contenedor-input">
+          <img src="./images/icon-person.svg" alt="">
+          <input type="number" name="" id="personas" class="precio" placeholder="0">
+        </div>
+        <p class="error" id="error-personas">Can´t be zero</p>
+        
+      </div>
+
+      <div class="bottom">
+        <div class="desglose">
+          <div>
+            <h3>Tip Amount</h3>
+            <p>/ person</p>
+          </div>
+          <p class="total-propina" id="total-propina">$0.00</p>
+          <div>
+            <h3>Total</h3>
+            <p>/ person</p>
+          </div>
+          <p class="total-persona" id="total-persona">$0.00</p>
+        </div>
+        <button class="btn-reset" id="btn-reset">Reset</button>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+</html>
